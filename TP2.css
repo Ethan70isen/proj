@@ -1,0 +1,159 @@
+h1{
+    font-weight: bold;
+    text-align: center;
+    background-color: yellow;
+    background-image: url("img/html5.png"),url("img/css3.png");
+    background-size: contain,contain;
+    background-repeat: no-repeat,no-repeat;
+    background-position: left,right;
+}
+h2{
+    font-family: 'Trebuchet MS';
+    font-style: italic;
+    border: 3px dotted red;
+    margin: 20px;
+    padding: 10px;
+}
+h3{
+    color: blue;
+}
+.para1{
+    font-family:serif ;
+    font-size: 18pt;
+    line-height: 30pt ;
+}
+.para2::first-letter{
+    font-weight: bold ;
+    color:blue;
+    font-size: 15pt;
+
+}
+.para2::first-line{
+    font-style:italic;
+}
+.para3::after{
+    content:"Quelque chose ajouté à tous les paragraphes de la classe para3";
+    color: gray;
+}
+div[class*="test"]{
+    background: silver;
+}
+.block>h5{
+    color:yellow;
+}
+div div h5{
+    color: green;
+}
+h4 + h5{
+    color: red;
+}
+#deux>p{
+    color: orange;
+}
+
+#deux h4:first-child{
+    color: blue;
+}
+
+.link1:link{
+    color:Blue;
+    text-decoration: none;
+}
+
+.link1:visited{
+    color:orange;
+}
+
+.link1:hover{
+    color:green;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.link2:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.link2:hover{
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+.link2:active{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+    background-color: silver;
+}
+
+caption {
+    font-family: 'Broadway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+table {
+    width: 50%; 
+    margin: auto; 
+    border: 3px solid #6495ed; 
+    border-collapse: collapse;
+    font-family: sans-serif; 
+}
+
+
+td {
+    border: 1px solid #6495ed; 
+    width: 25%; 
+    text-align: center; 
+    padding: 8px; 
+}
+
+th {
+    border: 1px solid #6495ed; 
+    width: 25%; 
+    text-align: center; 
+    padding: 8px;
+    background-color: #EFF6FF; 
+    font-weight: bold; 
+}
+
+#fable {
+    width: 50%; 
+    margin: auto; 
+    text-align: left; 
+    color: blue; 
+    background-color: lightgrey;
+    border: 2px solid red ;
+    text-align: center;
+    
+}
+
+
+
+#fable p:not(:first-child,:last-child){
+    padding: 10px; 
+    margin: 5px 0; 
+}
+
+
+#fable p:hover {
+    color: green; 
+}
+
+#fable p:first-child {
+    color: red; 
+    font-weight: bold; 
+    font-size: 120%; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+#fable p:last-child {
+    color: black; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
